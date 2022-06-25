@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+      
+      <!--this is our bean-->
+           
+        <bean class="com.spring.springcor.collections.Emp" name="emp1" >
+        	<property name="name" value="Anshuman Verma"/>
+        	
+        	<property name="phones" >
+        		<list>
+        			<value>7895</value>
+        			<value>9088</value>
+        			<value>2376</value>
+        			<value>6542</value>
+        		</list>
+        	</property>
+        	
+        	<property name="addresses" >
+        		<set>
+        			<value>DEL</value>
+        			<value>KAN</value>
+        			<value>BHP</value>
+        			<value>JHS</value>
+        		</set>
+        	</property>
+        	
+        	
+        	<property name="courses" >
+        		<map>
+        			<entry key="Java" value="2 months"/>
+        			<entry key="Python" value="1 months"/>
+        			<entry key="A-CAD" value="1.2 months"/>
+        		</map>
+        	</property>
+        	
+        
+        
+        </bean>
+        
+        
+        
+        
+      		
+      	 	
+           
+           
+</beans> 
